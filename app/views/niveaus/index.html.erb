@@ -1,0 +1,27 @@
+<h1>Niveaux</h1>
+
+<%= link_to 'Nouveau niveau', new_niveau_path %>
+ | 
+<%= link_to 'Types d''elements dans un niveau', types_path %>
+<br/>
+<br/>
+
+<table border=1 cellpadding=2>
+  <tr>
+    <th>Tier</th>
+    <th>Numero</th>
+    <th>Titre</th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @niveaus.each do |niveau| %>
+  <tr>
+    <td><%= niveau.tier %></td>
+	<td><%= niveau.numero %></td>
+    <td><%= niveau.titre %></td>
+    <td><%= link_to 'Edit', edit_niveau_path(niveau) %></td>
+    <td><%= link_to 'Destroy', niveau, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>

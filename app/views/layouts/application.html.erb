@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BounceTheRedBallEditor</title>
+  <%= stylesheet_link_tag :all %>
+  
+  <%= javascript_include_tag "js/jquery-1.4.4.min" %>
+  <%= javascript_include_tag "js/jquery-ui-1.8.7.custom.min" %>
+  <%= javascript_include_tag "rails" %>
+  <%= javascript_include_tag "application" %>
+  
+  <%= csrf_meta_tag %>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+</html>

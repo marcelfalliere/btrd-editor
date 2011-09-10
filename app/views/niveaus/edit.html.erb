@@ -1,0 +1,11 @@
+<h1><%= @niveau.titre %></h1>
+
+<%= render 'form' %>
+
+<b><%= link_to 'Serializer', serialize_niveau_path(@niveau) %></b> |
+<%= link_to 'Retour a la liste', niveaus_path %>
+
+<hr/>
+
+<%= render 'editor' %>
+

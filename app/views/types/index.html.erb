@@ -1,0 +1,40 @@
+<h1>Types d'elements</h1>
+
+
+<%= link_to 'Nouveau type', new_type_path %>
+ | 
+<%= link_to 'Retour a la liste des niveaux', niveaus_path %>
+<br/>
+<br/>
+
+
+<table  border=1 cellpadding=2>
+  <tr>
+    <th>Ex.</th>
+	<th>Id</th>
+    <th>Type</th>
+    <th>Classe css</th>
+    <th>Balise xml</th>
+    <th>Calcul des attributs pour les perfs</th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @types.each do |type| %>
+  <tr>
+    <td>
+    
+    <div class="<%= type.cssClass %>" 
+style="width:16px;height:16px;"></div>
+
+    </td>
+    <td><%= type.id %></td>
+    <td><%= type.label %></td>
+    <td><%= type.cssClass %></td>
+    <td><%= type.xmlTag %></td>
+    <td><%= (type.perfVoisin)?'o':'x' %></td>
+    <td><%= link_to 'Destroy', type, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Edit', edit_type_path(type) %></td>
+  </tr>
+<% end %>
+</table>

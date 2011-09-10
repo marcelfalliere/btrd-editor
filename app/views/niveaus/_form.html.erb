@@ -1,0 +1,39 @@
+<%= form_for(@niveau) do |f| %>
+  <% if @niveau.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@niveau.errors.count, "error") %> prohibited this niveau from being saved:</h2>
+
+      <ul>
+      <% @niveau.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :tier %><br />
+    <%= f.text_field :tier %>
+  </div>
+  <div class="field">
+    <%= f.label :numero %><br />
+    <%= f.text_field :numero %>
+  </div>
+  
+  
+  <div class="field">
+    <%= f.label :titre %><br />
+    <%= f.text_field :titre %>
+  </div>
+  <div class="field">
+    <%= f.label :bgImage %><br />
+    <%= f.text_field :bgImage %>
+  </div>
+  <div class="field">
+    <%= f.label :file %><br />
+    <%= f.text_field :file %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

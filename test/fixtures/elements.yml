@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  type: 
+  niveau: 
+  x: 1
+  y: 1
+
+two:
+  type: 
+  niveau: 
+  x: 1
+  y: 1

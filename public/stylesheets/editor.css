@@ -1,0 +1,30 @@
+#iphone { display:inline-block; background-image:url('../images/iphone-interface.jpg'); height:752px; width:402px; position:relative; }
+#iphone #screen { position:absolute; width:320px; height:480px; left:41px; top:144px; background-color:white; }
+#iphone #case { position:absolute; width:14px; height:14px; left:41px; top:144px; border:1px dashed red; z-index:999;}
+
+#editbox div {  background-color:#eee; padding:5px; margin-bottom:5px; }
+
+/** type de blocs/cases */
+.case { position:absolute; }
+.bloc-simple { background-color:#231F20; }
+.spawn { background-image:url('../images/spawn.png'); }
+.exit { background-image:url('../images/exit.png'); }
+.friend { background-image:url('../images/friend.png'); }
+.xg { background-image:url('../images/xg.png'); }
+.minus-g { background-image:url('../images/minus-g.png'); }
+.destroyable { background-image:url('../images/destroyable.png'); }
+.no-bounce { background-image:url('../images/no-bounce.png'); }
+
+.spike { background-image:url('../images/spike-top.png'); }
+.spike.top { background-image:url('../images/spike-top.png'); }
+.spike.bottom { background-image:url('../images/spike-bottom.png'); }
+.spike.left { background-image:url('../images/spike-left.png'); }
+.spike.right { background-image:url('../images/spike-right.png'); }
+
+.pente { background-image:url('../images/pente-NW.png'); }
+.pente.NW { background-image:url('../images/pente-NW.png'); }
+.pente.NE { background-image:url('../images/pente-NE.png'); }
+.pente.SW { background-image:url('../images/pente-SW.png'); }
+.pente.SE { background-image:url('../images/pente-SE.png'); }
+
+.blueBlock { background-image:url('../images/blueBlock.png'); }

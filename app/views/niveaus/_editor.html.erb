@@ -1,0 +1,49 @@
+<input type="hidden" id="niveau_id" value="<%= @niveau.id %>"/>
+<table><tr><td valign=top>
+
+<div id="iphone">
+
+	<div id="screen" style="<%= (@niveau.bgImage.blank?)?"":"background-image:url('../../images/bg/#{@niveau.bgImage}')" %>">
+	
+		<%= render "screen" %>
+	
+	</div>
+
+	<div id="case"></div>
+	
+</div>
+
+</td><td  valign=top>
+
+<div id="editbox">
+	<div id="coordonnees"></div>
+	<div id="details"></div>
+	<div id="fastedit">
+		<b>fastedit!</b>
+		<label for="fastedittype">Choose a type</label>
+		
+		<% form_tag fastedit_niveau_path(@niveau) do %>
+			<select id="fastedittype" name="fastedittype">
+				<option value="delete">Gomme magique :p</option>
+				<option disabled>--------- types normaux: ----</option>
+				<% @types.each do |type| %>
+					<option data-cssClass="<%= type.cssClass %>" value="<%= type.id %>"><%= type.label %></option>
+				<% end %>
+			</select>
+			<br/>
+			<a href="#" id="beginfastedit">Begin fast edit with this type !</a>
+						
+			<%= hidden_field_tag "coordinates" %>
+			
+			<div id="fastedit-actions">
+				<%= submit_tag "Valider" %>
+				<a href="#" id="annulerfastedit">Annuler</a>
+			</div>
+		<% end %>
+		
+		<div id="feedback"></div>
+		
+	</div>
+</div>
+
+</td></tr></table>

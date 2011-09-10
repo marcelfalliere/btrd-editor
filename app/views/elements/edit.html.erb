@@ -1,0 +1,10 @@
+<h1>Type <%= @element.type.label %> [<%= @element.x %>, <%= @element.y %>]</h1>
+
+<%= render 'form' %>
+
+
+<%= form_tag delete_element_path(@element) do %>
+	<div class="actions">
+		<%= submit_tag "Delete" %>
+	</div>
+<% end %>

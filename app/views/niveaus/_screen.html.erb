@@ -1,0 +1,13 @@
+<% @niveau.elements.each do |element| %>
+
+<div class="case <%= element.type.cssClass %> 
+
+<%= (element.type_id==5)?"#{element.options.where('name=?','orientation')[0].value}":"" %>
+
+<%= (element.type_id==11)?"#{element.options.where('name=?','orientation')[0].value}":"" %>
+
+" 
+
+style="left:<%= (element.x-1)*16 %>px;top:<%= 480-(element.y)*16 %>px;width:16px;height:16px"></div>
+
+<% end %>

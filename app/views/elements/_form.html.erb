@@ -1,0 +1,40 @@
+<%= form_for(@element) do |f| %>
+  <% if @element.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@element.errors.count, "error") %> prohibited this element from being saved:</h2>
+
+      <ul>
+      <% @element.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <%= f.hidden_field :niveau_id %>
+  <%= f.hidden_field :y %>
+  <%= f.hidden_field :x %>
+  
+  <% if controller.action_name=="new" %>
+	  <div class="field">
+		<%= label_tag :type %><br />
+		<%= select("element", "type_id", @types.map {|u| [u.label, u.id]}) %>
+	  </div>
+  <% end %>
+  
+  <% if controller.action_name=="edit" %>
+  
+	<%= f.fields_for :options do |o| %>
+		<div class="field">
+			<%= label_tag o.object.name %>
+			<%= o.text_field :value %>
+		</div>
+	<% end %>
+  
+  <% end %>
+  
+  
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
