@@ -1,4 +1,4 @@
-1315683113
+1315740804
 AddBgImageToNiveaus	/Users/fredericfalliere/DeveloppementRails/bounceTheRedBallEditor/db/migrate/20110830133846_add_bg_image_to_niveaus.rb	class AddBgImageToNiveaus 
 AddCssClassToTypes	/Users/fredericfalliere/DeveloppementRails/bounceTheRedBallEditor/db/migrate/20110830130917_add_css_class_to_types.rb	class AddCssClassToTypes 
 AddFileToNiveaus	/Users/fredericfalliere/DeveloppementRails/bounceTheRedBallEditor/db/migrate/20110831090124_add_file_to_niveaus.rb	class AddFileToNiveaus 
