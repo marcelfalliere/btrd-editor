@@ -10,13 +10,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110910192928) do
+ActiveRecord::Schema.define(:version => 20110912193635) do
 
   create_table "elements", :force => true do |t|
     t.integer  "type_id"
     t.integer  "niveau_id"
     t.integer  "x"
     t.integer  "y"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "mainconfigs", :force => true do |t|
+    t.string   "root"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

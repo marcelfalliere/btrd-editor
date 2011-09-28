@@ -1,0 +1,21 @@
+<%= form_for(@mainconfig) do |f| %>
+  <% if @mainconfig.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@mainconfig.errors.count, "error") %> prohibited this mainconfig from being saved:</h2>
+
+      <ul>
+      <% @mainconfig.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :root %><br />
+    <%= f.text_field :root %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

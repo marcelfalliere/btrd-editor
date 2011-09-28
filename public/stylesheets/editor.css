@@ -28,3 +28,6 @@
 .pente.SE { background-image:url('../images/pente-SE.png'); }
 
 .blueBlock { background-image:url('../images/blueBlock.png'); }
+
+.platform { background:url('../images/platform.png') no-repeat center; }
+.platform.inverse { background-image:url('../images/platform-inverse.png'); }

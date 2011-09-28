@@ -23,16 +23,22 @@ class Element < ActiveRecord::Base
 		self.options.create({:name=>'orientation', :value=>'top'})
 	end
 	
-	# sprite
+	# sprite conditionnel
 	if self.type_id==10
 		self.options.create({:name=>'fichier', :value=>'top'})
 	end
 	
-	# sprite
+	# sprite pente
 	if self.type_id==11
 		self.options.create({:name=>'orientation', :value=>'NW'})
 	end
 	
+	# platform
+	if self.type_id==13
+		self.options.create({:name=>'orientation', :value=>'normal'})
+    self.options.create({:name=>'deltax', :value=>'16'})
+	end
+  
   end
   
 end

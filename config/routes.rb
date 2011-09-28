@@ -1,4 +1,6 @@
 BounceTheRedBallEditor::Application.routes.draw do
+  resources :mainconfigs
+
   resources :elements, :except => :destroy do
 	collection do
 		get 'details'
@@ -16,6 +18,11 @@ BounceTheRedBallEditor::Application.routes.draw do
 		get 'serialize'
 		post 'fastedit'
 	end
+  
+  collection do
+    get 'serialize_all'
+  end
+  
   end
 
   # The priority is based upon order of creation:

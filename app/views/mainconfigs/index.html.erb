@@ -1,0 +1,23 @@
+<h1>Listing mainconfigs</h1>
+
+<table>
+  <tr>
+    <th>Root</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @mainconfigs.each do |mainconfig| %>
+  <tr>
+    <td><%= mainconfig.root %></td>
+    <td><%= link_to 'Show', mainconfig %></td>
+    <td><%= link_to 'Edit', edit_mainconfig_path(mainconfig) %></td>
+    <td><%= link_to 'Destroy', mainconfig, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Mainconfig', new_mainconfig_path %>
