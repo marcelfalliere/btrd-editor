@@ -25,7 +25,7 @@ class NiveausController < ApplicationController
   
   # POST /niveaus/serialize_all
   def serialize_all
-    Niveau.all.each do |n|
+    Niveau.where("isRealyDeleted=?", false).each do |n|
       n.serialize
     end
     redirect_to niveaus_path
@@ -34,7 +34,7 @@ class NiveausController < ApplicationController
   # GET /niveaus/serialize/1/
   def serialize
 	  @niveau = Niveau.find(params[:id])
-    @niveau.serialize
+	  @niveau.serialize
 	  redirect_to edit_niveau_path(@niveau)
   end
   
@@ -47,7 +47,7 @@ class NiveausController < ApplicationController
   # GET /niveaus
   # GET /niveaus.xml
   def index
-    @niveaus = Niveau.order("tier,numero")
+    @niveaus = Niveau.order("isReallyDeleted, isTest,tier asc,numero")
     @mainconfig = Mainconfig.find(1)
 
     respond_to do |format|
@@ -75,6 +75,7 @@ class NiveausController < ApplicationController
   # GET /niveaus/1/edit
   def edit
     @niveau = Niveau.find(params[:id])
+	@niveaus = Niveau.where("isReallyDeleted=? and isTest=?",false,false).order("tier asc,numero")
 	@types = Type.find(:all)
   end
 

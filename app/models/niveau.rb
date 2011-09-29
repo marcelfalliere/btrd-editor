@@ -1,6 +1,12 @@
 class Niveau < ActiveRecord::Base
 	has_many :elements
   
+  before_create :default
+  def default
+	self.isReallyDeleted=false unless !self.isDeleted.nil?
+	self.isTest=false unless !self.isTest.nil?
+  end
+  
   def serialize
     fileName = "lvl-#{self.tier}-#{self.numero}.xml"
     filePath = Mainconfig.find(1).root

@@ -8,14 +8,15 @@
 <br/>
 
 
-<table  border=1 cellpadding=2>
+<table  border=1 cellpadding=0 cellspacing=0>
   <tr>
     <th>Ex.</th>
 	<th>Id</th>
     <th>Type</th>
     <th>Classe css</th>
     <th>Balise xml</th>
-    <th>Calcul des attributs pour les perfs</th>
+    <th>Calcul des attributs <br/> pour les perfs</th>
+    <th>Transformer en <br/>segment egalement ?</th>
     <th></th>
     <th></th>
   </tr>
@@ -32,7 +33,8 @@ style="width:16px;height:16px;"></div>
     <td><%= type.label %></td>
     <td><%= type.cssClass %></td>
     <td><%= type.xmlTag %></td>
-    <td><%= (type.perfVoisin)?'o':'x' %></td>
+    <td><%= (type.perfVoisin)?'YES':'' %></td>
+    <td><%= (type.isSegment)?'YES':'' %></td>
     <td><%= link_to 'Destroy', type, :confirm => 'Are you sure?', :method => :delete %></td>
     <td><%= link_to 'Edit', edit_type_path(type) %></td>
   </tr>

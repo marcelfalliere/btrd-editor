@@ -1,0 +1,16 @@
+
+<% previousTier=1
+   @niveaus.each do |n| 
+	
+	if previousTier!=n.tier
+	%>
+		<br/>
+	<%
+	end
+	%>
+	
+	<%= link_to "#{n.tier} #{n.numero}", edit_niveau_path(n) %>  | 
+	
+	<%
+	previousTier=n.tier
+   end %>

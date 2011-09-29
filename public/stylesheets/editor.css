@@ -30,4 +30,6 @@
 .blueBlock { background-image:url('../images/blueBlock.png'); }
 
 .platform { background:url('../images/platform.png') no-repeat center; }
+.platform.normal { background-image:url('../images/platform.png'); }
 .platform.inverse { background-image:url('../images/platform-inverse.png'); }
+.platform-helper { position:absolute; border-bottom:1px dotted grey; height:1px; }

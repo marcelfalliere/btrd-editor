@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110912193635) do
+ActiveRecord::Schema.define(:version => 20110929092616) do
 
   create_table "elements", :force => true do |t|
     t.integer  "type_id"
@@ -27,15 +27,8 @@ ActiveRecord::Schema.define(:version => 20110912193635) do
     t.datetime "updated_at"
   end
 
-  create_table "niveaus", :force => true do |t|
-    t.integer  "numero"
-    t.string   "titre"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "bgImage"
-    t.string   "file"
-    t.integer  "tier"
-  end
+# Could not dump table "niveaus" because of following StandardError
+#   Unknown type 'bool' for column 'isDeleted'
 
   create_table "options", :force => true do |t|
     t.integer  "element_id"
@@ -52,6 +45,7 @@ ActiveRecord::Schema.define(:version => 20110912193635) do
     t.string   "cssClass"
     t.string   "xmlTag"
     t.boolean  "perfVoisin"
+    t.boolean  "isSegment"
   end
 
 end

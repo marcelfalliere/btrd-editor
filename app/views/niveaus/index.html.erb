@@ -10,22 +10,60 @@
 <br/>
 <br/>
 
-<table border=1 cellpadding=2>
+<table border=1 cellpadding=0 cellspacing=0 style="border-color:#000;">
   <tr>
-    <th>Tier</th>
+    <th>Deleted ?</th>
+	<th>Test ?</th>
+    <th>Couleur</th>
+	<th>Tier</th>
     <th>Numero</th>
     <th>Titre</th>
     <th></th>
     <th></th>
+	<th>Inventaire</th>
   </tr>
 
 <% @niveaus.each do |niveau| %>
+
+	<%
+	bgColor="#ffffff"
+	if (!niveau.isReallyDeleted and !niveau.isTest)
+		if niveau.tier==1 
+			bgColor="#0B5FA5"
+		end
+		if niveau.tier==2
+			bgColor="#A66000"
+		end
+		if niveau.tier==3 
+			bgColor="#389E28"
+		end
+		if niveau.tier==4 
+			bgColor="#A2000C"
+		end
+	end
+	%>
+
   <tr>
-    <td><%= niveau.tier %></td>
+	<td><%= (niveau.isReallyDeleted)?'DELETED':'' %></td>
+	<td><%= (niveau.isTest)?'TEST':'' %></td>
+    <td style="background-color:<%= bgColor %>"></td>
+	<td><%= niveau.tier %></td>
 	<td><%= niveau.numero %></td>
     <td><%= niveau.titre %></td>
     <td><%= link_to 'Edit', edit_niveau_path(niveau) %></td>
     <td><%= link_to 'Destroy', niveau, :confirm => 'Are you sure?', :method => :delete %></td>
+	<td>
+	<%
+	Type.all.each do |t|
+		countType=niveau.elements.where("type_id=?",t.id).count
+		if  countType > 0
+			%>
+			<div class="<%= t.cssClass %>" style="width:16px;height:16px;display:inline-block"></div>x<%= countType%> 
+			<%
+		end
+	end
+	%>
+	</td>
   </tr>
 <% end %>
 </table>

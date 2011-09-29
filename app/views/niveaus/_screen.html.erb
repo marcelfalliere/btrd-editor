@@ -1,15 +1,48 @@
 <% @niveau.elements.each do |element| %>
 
-<div class="case <%= element.type.cssClass %> 
+	<%
+		cssClass=""
+		cssClass=element.type.cssClass
+		if [5,11,13].include?(element.type_id)
+			
+			cssClass = "#{element.type.cssClass} #{element.options.where('name=?','orientation')[0].value}"
+		end
+		
+		left=(element.x-1)*16
+		top=480-(element.y)*16
+		
+		if element.type_id==13
+			orientation = element.options.where('name=?','orientation')[0].value
+			if orientation=="inverse"
+				top=top+4
+			else
+				top=top-4
+			end
+		end
+	%>
 
-<%= (element.type_id==5)?"#{element.options.where('name=?','orientation')[0].value}":"" %>
 
-<%= (element.type_id==11)?"#{element.options.where('name=?','orientation')[0].value}":"" %>
-
-<%= (element.type_id==13)?"#{element.options.where('name=?','orientation')[0].value}":"" %>
-
-" 
-
-style="left:<%= (element.x-1)*16 %>px;top:<%= 480-(element.y)*16 %>px;width:16px;height:16px"></div>
-
+	<div class="case <%= cssClass %>" 
+		 style="left:<%= left %>px;top:<%= top %>px;width:16px;height:16px">
+	</div>
+	
+	<%
+		if element.type_id==13
+			dx = element.options.where('name=?','deltax')[0].value
+			
+			if orientation=="inverse"
+				top=top+8
+			else 
+				top=top+1
+			end
+			
+			%>
+			
+			<div class="platform-helper" style="left:<%= left+16 %>px;top:<%= top+2 %>px;width:<%= dx %>px"></div>
+			
+			<%
+		
+		end
+	%>
+	 
 <% end %>
