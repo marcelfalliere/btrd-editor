@@ -1,0 +1,18 @@
+<level number='8' tier='20' title='Platform and others' type=''>
+	<platform x='152.0' y='40.0' orientation='normal' deltax='16'></platform>
+	<blueBlock x='232.0' y='8.0' hasOneAbove='1' hasOneBelow='1' hasOneOnTheRight='0' hasOneOnTheLeft='0' ></blueBlock>
+	<blueBlock x='232.0' y='24.0' hasOneAbove='0' hasOneBelow='1' hasOneOnTheRight='0' hasOneOnTheLeft='0' ></blueBlock>
+	<blueBlock x='104.0' y='8.0' hasOneAbove='1' hasOneBelow='1' hasOneOnTheRight='0' hasOneOnTheLeft='0' ></blueBlock>
+	<blueBlock x='104.0' y='24.0' hasOneAbove='0' hasOneBelow='1' hasOneOnTheRight='0' hasOneOnTheLeft='0' ></blueBlock>
+	<spawn x='296.0' y='8.0'></spawn>
+	<minusg x='24.0' y='8.0'></minusg>
+	<minusg x='24.0' y='472.0'></minusg>
+	<platform x='200.0' y='40.0' orientation='normal' deltax='16'></platform>
+	<platform x='104.0' y='424.0' orientation='inverse' deltax='16'></platform>
+	<platform x='200.0' y='424.0' orientation='inverse' deltax='16'></platform>
+	<platform x='136.0' y='248.0' orientation='normal' deltax='16'></platform>
+	<platform x='184.0' y='248.0' orientation='inverse' deltax='16'></platform>
+	<defaultBlock x='120.0' y='248.0' hasOneAbove='0' hasOneBelow='0' hasOneOnTheRight='0' hasOneOnTheLeft='0' ></defaultBlock>
+	<defaultBlock x='168.0' y='248.0' hasOneAbove='0' hasOneBelow='0' hasOneOnTheRight='0' hasOneOnTheLeft='0' ></defaultBlock>
+	<defaultBlock x='216.0' y='248.0' hasOneAbove='0' hasOneBelow='0' hasOneOnTheRight='0' hasOneOnTheLeft='0' ></defaultBlock>
+</level>

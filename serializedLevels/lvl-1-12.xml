@@ -1,0 +1,14 @@
+<level number='12' tier='1' title='' type=''>
+	<defaultBlock x='312.0' y='472.0' hasOneAbove='1' hasOneBelow='0' hasOneOnTheRight='1' hasOneOnTheLeft='0' ></defaultBlock>
+	<defaultBlock x='184.0' y='408.0' hasOneAbove='0' hasOneBelow='0' hasOneOnTheRight='0' hasOneOnTheLeft='0' ></defaultBlock>
+	<defaultBlock x='184.0' y='376.0' hasOneAbove='0' hasOneBelow='1' hasOneOnTheRight='0' hasOneOnTheLeft='0' ></defaultBlock>
+	<defaultBlock x='184.0' y='360.0' hasOneAbove='1' hasOneBelow='0' hasOneOnTheRight='0' hasOneOnTheLeft='0' ></defaultBlock>
+	<defaultBlock x='200.0' y='344.0' hasOneAbove='0' hasOneBelow='0' hasOneOnTheRight='0' hasOneOnTheLeft='0' ></defaultBlock>
+	<defaultBlock x='216.0' y='360.0' hasOneAbove='0' hasOneBelow='0' hasOneOnTheRight='0' hasOneOnTheLeft='0' ></defaultBlock>
+	<defaultBlock x='232.0' y='376.0' hasOneAbove='0' hasOneBelow='0' hasOneOnTheRight='0' hasOneOnTheLeft='0' ></defaultBlock>
+	<defaultBlock x='248.0' y='392.0' hasOneAbove='0' hasOneBelow='0' hasOneOnTheRight='0' hasOneOnTheLeft='0' ></defaultBlock>
+	<defaultBlock x='280.0' y='408.0' hasOneAbove='0' hasOneBelow='0' hasOneOnTheRight='0' hasOneOnTheLeft='1' ></defaultBlock>
+	<defaultBlock x='264.0' y='408.0' hasOneAbove='0' hasOneBelow='0' hasOneOnTheRight='1' hasOneOnTheLeft='0' ></defaultBlock>
+	<defaultBlock x='168.0' y='392.0' hasOneAbove='0' hasOneBelow='0' hasOneOnTheRight='0' hasOneOnTheLeft='0' ></defaultBlock>
+	<defaultBlock x='200.0' y='392.0' hasOneAbove='0' hasOneBelow='0' hasOneOnTheRight='0' hasOneOnTheLeft='0' ></defaultBlock>
+</level>

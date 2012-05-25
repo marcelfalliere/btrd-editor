@@ -1,0 +1,44 @@
+<level number='20' tier='1' title='To the top' type=''>
+	<defaultBlock x='8.0' y='456.0' hasOneAbove='0' hasOneBelow='0' hasOneOnTheRight='1' hasOneOnTheLeft='1' ></defaultBlock>
+	<defaultBlock x='24.0' y='456.0' hasOneAbove='0' hasOneBelow='0' hasOneOnTheRight='0' hasOneOnTheLeft='1' ></defaultBlock>
+	<exit x='8.0' y='472.0'></exit>
+	<defaultBlock x='264.0' y='56.0' hasOneAbove='0' hasOneBelow='1' hasOneOnTheRight='0' hasOneOnTheLeft='0' ></defaultBlock>
+	<defaultBlock x='184.0' y='56.0' hasOneAbove='0' hasOneBelow='0' hasOneOnTheRight='0' hasOneOnTheLeft='0' ></defaultBlock>
+	<defaultBlock x='104.0' y='56.0' hasOneAbove='0' hasOneBelow='0' hasOneOnTheRight='0' hasOneOnTheLeft='0' ></defaultBlock>
+	<blueBlock x='24.0' y='56.0' hasOneAbove='0' hasOneBelow='0' hasOneOnTheRight='0' hasOneOnTheLeft='0' ></blueBlock>
+	<defaultBlock x='24.0' y='120.0' hasOneAbove='0' hasOneBelow='0' hasOneOnTheRight='0' hasOneOnTheLeft='0' ></defaultBlock>
+	<defaultBlock x='104.0' y='120.0' hasOneAbove='0' hasOneBelow='0' hasOneOnTheRight='0' hasOneOnTheLeft='0' ></defaultBlock>
+	<defaultBlock x='184.0' y='120.0' hasOneAbove='0' hasOneBelow='0' hasOneOnTheRight='0' hasOneOnTheLeft='0' ></defaultBlock>
+	<defaultBlock x='296.0' y='8.0' hasOneAbove='0' hasOneBelow='1' hasOneOnTheRight='1' hasOneOnTheLeft='0' ></defaultBlock>
+	<blueBlock x='312.0' y='8.0' hasOneAbove='0' hasOneBelow='1' hasOneOnTheRight='1' hasOneOnTheLeft='1' ></blueBlock>
+	<blueBlock x='264.0' y='120.0' hasOneAbove='0' hasOneBelow='0' hasOneOnTheRight='0' hasOneOnTheLeft='0' ></blueBlock>
+	<defaultBlock x='184.0' y='184.0' hasOneAbove='0' hasOneBelow='0' hasOneOnTheRight='0' hasOneOnTheLeft='0' ></defaultBlock>
+	<blueBlock x='104.0' y='184.0' hasOneAbove='0' hasOneBelow='0' hasOneOnTheRight='0' hasOneOnTheLeft='0' ></blueBlock>
+	<defaultBlock x='264.0' y='40.0' hasOneAbove='1' hasOneBelow='1' hasOneOnTheRight='0' hasOneOnTheLeft='0' ></defaultBlock>
+	<defaultBlock x='264.0' y='24.0' hasOneAbove='1' hasOneBelow='1' hasOneOnTheRight='0' hasOneOnTheLeft='0' ></defaultBlock>
+	<defaultBlock x='264.0' y='8.0' hasOneAbove='1' hasOneBelow='1' hasOneOnTheRight='0' hasOneOnTheLeft='1' ></defaultBlock>
+	<spike x='248.0' y='8.0' orientation='top'></spike>
+	<spike x='232.0' y='8.0' orientation='top'></spike>
+	<spike x='216.0' y='8.0' orientation='top'></spike>
+	<spike x='184.0' y='8.0' orientation='top'></spike>
+	<spike x='152.0' y='8.0' orientation='top'></spike>
+	<spike x='136.0' y='8.0' orientation='top'></spike>
+	<spike x='88.0' y='8.0' orientation='top'></spike>
+	<spike x='72.0' y='8.0' orientation='top'></spike>
+	<spike x='40.0' y='8.0' orientation='top'></spike>
+	<spike x='8.0' y='8.0' orientation='top'></spike>
+	<spike x='24.0' y='8.0' orientation='top'></spike>
+	<spike x='56.0' y='8.0' orientation='top'></spike>
+	<spike x='104.0' y='8.0' orientation='top'></spike>
+	<spike x='120.0' y='8.0' orientation='top'></spike>
+	<spike x='168.0' y='8.0' orientation='top'></spike>
+	<spike x='200.0' y='8.0' orientation='top'></spike>
+	<blueBlock x='24.0' y='248.0' hasOneAbove='0' hasOneBelow='0' hasOneOnTheRight='0' hasOneOnTheLeft='0' ></blueBlock>
+	<defaultBlock x='104.0' y='312.0' hasOneAbove='0' hasOneBelow='0' hasOneOnTheRight='0' hasOneOnTheLeft='0' ></defaultBlock>
+	<defaultBlock x='264.0' y='248.0' hasOneAbove='0' hasOneBelow='0' hasOneOnTheRight='0' hasOneOnTheLeft='0' ></defaultBlock>
+	<blueBlock x='312.0' y='312.0' hasOneAbove='0' hasOneBelow='0' hasOneOnTheRight='1' hasOneOnTheLeft='0' ></blueBlock>
+	<spawn x='280.0' y='8.0'></spawn>
+	<defaultBlock x='264.0' y='376.0' hasOneAbove='0' hasOneBelow='0' hasOneOnTheRight='0' hasOneOnTheLeft='0' ></defaultBlock>
+	<defaultBlock x='104.0' y='376.0' hasOneAbove='0' hasOneBelow='0' hasOneOnTheRight='0' hasOneOnTheLeft='0' ></defaultBlock>
+	<blueBlock x='24.0' y='376.0' hasOneAbove='0' hasOneBelow='0' hasOneOnTheRight='0' hasOneOnTheLeft='0' ></blueBlock>
+</level>

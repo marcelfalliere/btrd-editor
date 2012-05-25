@@ -25,7 +25,7 @@ class NiveausController < ApplicationController
   
   # POST /niveaus/serialize_all
   def serialize_all
-    Niveau.where("isRealyDeleted=?", false).each do |n|
+    Niveau.all.each do |n|
       n.serialize
     end
     redirect_to niveaus_path
