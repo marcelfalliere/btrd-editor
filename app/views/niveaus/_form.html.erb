@@ -28,6 +28,11 @@
     <%= f.text_field :bgImage %>
   </div>  
   <div class="field">
+    <%= f.label :thetype %><br />
+    <%= f.select( :thetype, options_for_select([['Exit this level', 'exit'], ['Time trial', 'time'],['Free your friends', 'friends']], @niveau.thetype)) %>
+    
+  </div>  
+  <div class="field">
     <%= f.label :isTest %><br />
     <%= f.check_box :isTest %>
   </div>

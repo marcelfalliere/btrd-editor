@@ -20,7 +20,7 @@ class Niveau < ActiveRecord::Base
     filePath = Mainconfig.find(1).root
     
     File.open("#{filePath}/#{fileName}" , 'w') do |f| 
-		f.puts("<level number='#{self.numero}' tier='#{self.tier}' title='#{self.titre}'>")
+		f.puts("<level number='#{self.numero}' tier='#{self.tier}' title='#{self.titre}' type='#{self.thetype}'>")
 		
 		self.elements.each do |element|
 			currentLine = "\t<#{element.type.xmlTag} x='#{(element.x-0.5) * 16}' y='#{(element.y-0.5) * 16}'"
