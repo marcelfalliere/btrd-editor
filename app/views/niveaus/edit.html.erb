@@ -1,16 +1,20 @@
+<section id="other_levels">
+	<%= render 'active_lists' %>
+</section>
 
-<%= render 'active_lists' %>
 
-<h1><%= @niveau.titre %></h1>
+<section id="level_data">
+	<h1><%= @niveau.titre %></h1>
+	<%= render 'form' %>
+</section>
 
-<%= render 'form' %>
+<section id="level_toolbar">
+	<b><%= link_to 'Serializer', serialize_niveau_path(@niveau) %></b> |
+	<%= link_to 'Retour a la liste', niveaus_path %>
+</section>
 
-<b><%= link_to 'Serializer', serialize_niveau_path(@niveau) %></b> |
-<%= link_to 'Retour a la liste', niveaus_path %>
-
-<hr/>
-
-<%= render 'editor' %>
-
+<section id="level_editor">
+	<%= render 'editor' %>
+</section>
 
 

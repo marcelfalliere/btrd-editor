@@ -3,10 +3,18 @@ class Niveau < ActiveRecord::Base
   
   before_create :default
   def default
-	self.isReallyDeleted=false unless !self.isDeleted.nil?
-	self.isTest=false unless !self.isTest.nil?
+	 self.isReallyDeleted=false unless !self.isDeleted.nil?
+	 self.isTest=false unless !self.isTest.nil?
   end
   
+  def bgImageCss
+    if self.bgImage.blank?
+      return ""
+    else
+      return "background-image:url('../../images/bg/#{self.bgImage}')"
+    end
+  end
+
   def serialize
     fileName = "lvl-#{self.tier}-#{self.numero}.xml"
     filePath = Mainconfig.find(1).root

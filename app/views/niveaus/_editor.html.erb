@@ -3,9 +3,9 @@
 
 <div id="iphone">
 
-	<div id="screen" style="<%= (@niveau.bgImage.blank?)?"":"background-image:url('../../images/bg/#{@niveau.bgImage}')" %>">
+	<div id="screen" style="<%= @niveau.bgImageCss %>">
 	
-		<%= render "screen" %>
+		<%= render 'screen' %>
 	
 	</div>
 
@@ -16,7 +16,9 @@
 </td><td  valign=top>
 
 <div id="editbox">
-	<div id="coordonnees"></div>
+	<div id="coordonnees">
+	</div>
+
 	<div id="details"></div>
 	<div id="fastedit">
 		<b>fastedit!</b>
@@ -35,7 +37,7 @@
 						
 			<%= hidden_field_tag "coordinates" %>
 			
-			<div id="fastedit-actions">
+			<div id="fastedit-actions" style="display:none;">
 				<%= submit_tag "Valider" %>
 				<a href="#" id="annulerfastedit">Annuler</a>
 			</div>
@@ -47,3 +49,7 @@
 </div>
 
 </td></tr></table>
+
+<script id="coordonnees-template" type="text/x-underscore-template">
+  {{x}} - {{y}}
+</script>
